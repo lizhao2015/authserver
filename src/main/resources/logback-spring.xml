@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<include resource="org/springframework/boot/logging/logback/base.xml" />
+	<logger name="com.lanhai.auth2.authserver" level="DEBUG" />
+	<logger name="com.ibatis" level="DEBUG" />
+	<appender name="CYCLIC" class="ch.qos.logback.core.read.CyclicBufferAppender">
+		<MaxSize>512</MaxSize>
+	</appender>
+	<springProfile name="staging">
+		<logger name="com.lanhai.sample.elastric" level="TRACE" />
+	</springProfile>
+</configuration>
