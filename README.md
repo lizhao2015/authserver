@@ -3,7 +3,7 @@
 1.创建索引
 
 ```bash
-curl -XPUT http://localhost:9200/index
+curl -XPUT http://localhost:9200/songs
 ```
 
 2.创建映射方式
